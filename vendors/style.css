@@ -22,7 +22,7 @@ section{
 /* HEADINGS */
 h4{
     font-size: 70%;
-    color: #535353;
+    color: #9F9F9F;
     font-weight: 500;
     margin-bottom: 0.5em;
     
@@ -160,4 +160,31 @@ nav{
     margin-top: 1.5em;
     line-height: 1.7;
     width: 773px;
+}
+
+/* Bar Section */
+
+.bar-section{
+    overflow: hidden;
+}
+.bar-img{
+    width: 35em;
+    height: 90vh;
+    float: right;
+    margin-right:-1em ;
+    background: url(../images/Bar.jpg) no-repeat center center;
+    background-size: contain;
+    background-position: right;
+}
+
+.text-bar{
+    margin-left: 78px;
+    margin-top: 166px;
+}
+.text-bar h4{
+    margin-bottom: -2px;
+}
+
+.text-bar h3{
+    margin-top: 1em;
 }
