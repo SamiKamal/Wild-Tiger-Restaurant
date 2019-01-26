@@ -15,7 +15,14 @@ html{font-size: 30px;}
     max-width: 1140px;
     margin: 0 auto;
 }
-  
+
+.clearfix{overflow: auto;}
+.clearfix:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
 section{
     margin-top: 3em;
 }
@@ -192,3 +199,50 @@ nav{
 .btn-container{
     margin-top: 5em;
 }
+
+
+/* ---------------------------------------------- */
+/* MEALS */
+/* ---------------------------------------------- */
+.meals{
+    padding: 0;
+  
+  }
+  .meals-show{
+    width: 100%;
+    list-style: none;
+  
+  
+  }
+  .meals-show li{
+    display: block;
+    width: 25%;
+    float:left;
+  
+  }
+  .meals-show li figure{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  .meals-show li figure img{
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+            -moz-transform: scale(1.15);
+         transform: scale(1.15);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0.7;
+  
+  }
+  .meals-show li figure img:hover{
+    -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+         transform: scale(1.05);
+    opacity: 1;
+  }
+  
