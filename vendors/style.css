@@ -251,7 +251,7 @@ nav{
 /* ---------------------------------------------- */
 
 .where-to--section{
-    height: 43em;
+    height: 23em;
     background-color: #F4F4F4;
 }
 
@@ -302,9 +302,6 @@ nav{
 
 .hours-ul li{
     margin-top: .5em;
-}
-.where-to--section .btn-orange{
-    display: none;
 }
 
 .hours-ul::before{
