@@ -16,11 +16,14 @@ html{
     text-rendering: optimizeLegibility;
 }
 
-
+section{
+    margin-bottom: 40px;
+}
 /* HEADER */
 
 
 header{
+    margin-bottom: 40px;
     height: 110vh;
     background-image: url(../images/Hero-image.jpg);
     background-repeat: no-repeat;
@@ -125,6 +128,64 @@ h3{
     font-weight: 300;
     font-size: 3rem;
 }
+
+h2{
+    font-size: 4rem;
+    font-weight: 600;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=0, Color=#000000)";/*IE 8*/
+    text-shadow: 0 3px 6px rgba(0,0,0,0.2);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000); /*IE 5.5-7*/
+
+}
+
+h2::after{
+    display: block;
+    height: 5px;
+    width: 200px;
+    background-color: #EF5411;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=0, Color=#000000)";/*IE 8*/
+    -moz-box-shadow: 0 3px 8px rgba(0,0,0,0.2);/*FF 3.5+*/
+    -webkit-box-shadow: 0 3px 8px rgba(0,0,0,0.2);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color=#000000); /*IE 5.5-7*/
+  
+}
+
+/* About-Us */
+
+.about-us{
+    height: 90vh;
+
+}
+
+.about-us-img{
+    display: block;
+    max-width: 900px;;
+    background-image: url(../images/About-Us-image.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size:contain;
+    background-position:left;
+
+
+}
+.about-us-text{
+    max-width: 760px;
+    text-align: center;
+    margin-top: -43em;
+    margin-right: 10em;
+    float: right;
+}
+
+.about-us-text p{
+    font-size: 2rem;
+    line-height: 1.5
+}
+
 /*
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 /* GENRAL%%%%%%%%%%%%%%%%
