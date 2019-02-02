@@ -95,6 +95,7 @@ header{
     background-color: #EF5411;
     border-radius: 85px;
     transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=0, Color=#000000)";
     -moz-box-shadow: 0 3px 8px 3px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0 3px 8px 3px rgba(0,0,0,0.1);
@@ -103,7 +104,9 @@ header{
 }
 
 .btn-orange:hover{
-    transform: scale(1.02);
+    background-color: #fff;
+    color: #EF5411;
+    border: 2px solid #EF5411;
 }
     
 /* HEADING'S */
