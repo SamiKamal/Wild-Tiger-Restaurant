@@ -281,6 +281,7 @@ h2::after{
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    margin-bottom: 0;
 }
 .where-to--head-text{
     text-align: center;
@@ -349,6 +350,75 @@ h2::after{
 .where-to--hours--hours{
     list-style: none;
 }
+
+/* ---------------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------------- */
+
+footer{
+  padding: 50px;
+  font-size: 80%;
+  color: #888;
+}
+footer ul{
+  list-style: none;
+}
+.footer-nav{
+  float: left;
+}
+.footer-nav a{
+  text-decoration: none;
+  color: #888;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footer-nav a:hover{
+  color: #DDD;
+}
+footer li{
+  display: inline-block;
+  margin-left: 20px;
+
+}
+.social-links{
+  float: right;
+
+}
+
+.social-links ion-icon{
+  color: #888;
+  width: 30px;
+  font-size: 170%;
+  text-align: center;
+  /* align the icon*/
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+
+}
+.social-links a ion-icon[name=logo-facebook]:hover{
+  color: #3b5998;
+}
+.social-links a ion-icon[name=logo-twitter]:hover{
+  color: #00aced;
+}
+.social-links a ion-icon[name=logo-googleplus]:hover{
+  color: #dd4b39;
+}
+.social-links a ion-icon[name=logo-instagram]:hover{
+  color: #bc2a8d;
+}
+
+
+footer p {
+  text-align: center;
+  margin-top: 30px;
+}
+
 /*
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 /* GENRAL%%%%%%%%%%%%%%%%
