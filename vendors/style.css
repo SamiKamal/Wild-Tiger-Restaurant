@@ -369,12 +369,12 @@ footer ul{
 .footer-nav a{
   text-decoration: none;
   color: #888;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .footer-nav a:hover{
-  color: #DDD;
+  color: #EF5411;
 }
 footer li{
   display: inline-block;
