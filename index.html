@@ -119,22 +119,29 @@
 
 
 <section class="where-to--section clearfix">
-
-  <div class="rows">
+<div class="where-to--main">
   <div class="where-to--head-text">
     <h2>Where To Find Us ?</h2>
   </div>
 
   <div class="where-to--location">
-   <p><span> <ion-icon name="pin"></ion-icon> Address:</span>  1825 SE 164th AVE Suite 101 <br> &emsp; &emsp;&emsp;&emsp;&ensp; &ensp;VANCOUVER, WA 98683</p>
+    <!-- FIXME:
+    change it to div -->
+    <div class="horz">
+        <span> <ion-icon name="pin"></ion-icon> Address:</span>  1825 SE 164th AVE Suite 101 <br> &emsp; &emsp;&emsp;&emsp;&ensp; &ensp; VANCOUVER, WA 98683
+
+    </div>
+    <div class="horz">
+        <span><ion-icon name="call"></ion-icon> Phone: </span> 360-882-8887
+    </div>
+
     
-    <p><span><ion-icon name="call"></ion-icon> Phone: </span> 360-882-8887</p>
     <a href="#" class="btn-orange">Go To Directions</a>
   </div>
-
+</div>
   <div class="where-to--hours clearfix">
       <div class="hours-ul">
-        <ul>
+        <ul class="where-to--hours--location">
           <li>monday</li>
           <li>tuesday</li>
           <li>wednesday</li>
@@ -143,7 +150,7 @@
           <li>saturday</li>
           <li>sunday</li>
         </ul>
-        <ul>
+        <ul class="where-to--hours--hours">
           <li>11AM - 9PM</li>
           <li>11AM - 9PM</li>
           <li>11AM - 9PM</li>
@@ -154,7 +161,6 @@
         </ul>
       </div>
   </div>
-</div>
 </section>
 
 </body>

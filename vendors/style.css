@@ -269,6 +269,86 @@ h2::after{
 .text-bar .btn-orange{
     margin-top: 80px;
 }
+
+/* ---------------------------------------------- */
+/* Where to find us */
+/* ---------------------------------------------- */
+
+.where-to--section{
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/where-to-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.where-to--head-text{
+    text-align: center;
+}
+.where-to--main{
+    flex: 1 0 0;
+    margin-top: 90px;
+    margin-left: 60px;
+    max-width: 615px;
+}
+
+
+.where-to--location{
+    font-size: 1.8rem;
+}
+.horz{
+    display: block;
+    margin: 5px;
+    margin-bottom: 80px;
+}
+.where-to--location ion-icon{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2.3rem;
+    width: 50px;
+    margin-right: -10px;
+    color: black;
+    margin-top: -10px;
+}
+.where-to--location span{
+    font-weight: 600;   
+}
+
+.where-to--hours{
+    flex: 2 0 0;
+    max-width: 900px;
+    text-align: center;
+}
+
+.hours-ul{
+    display: flex;
+    margin-top: 230px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+}
+
+.hours-ul li{
+    padding-bottom: 20px;
+    text-align: left;
+}
+.where-to--hours--location{
+    flex-grow: 1;
+    list-style: none;
+    margin-left: 270px;
+}
+.where-to--hours--location::before{
+    content: 'Hours:';
+    text-transform: capitalize;
+    display: inline-block;
+    float: left;
+    margin-left: -120px;
+    padding-right: 20px;
+    font-weight: 600; 
+}
+.where-to--hours--hours{
+    list-style: none;
+}
 /*
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 /* GENRAL%%%%%%%%%%%%%%%%
