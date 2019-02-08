@@ -3,7 +3,8 @@
 html,*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   
 }
 body{
@@ -46,9 +47,12 @@ header{
     
 }
 .header-top nav ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 
 }
 .wild-tiger-logo{
@@ -60,15 +64,22 @@ header{
     width: 461px;
     height: 97px;
     text-indent: -99999px;
-    flex: 1 0 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+            flex: 1 0 0;
 }
 
 .header-top li{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;    
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
     margin-top: 20px;
 }
 .header-top li a {
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 
 }
@@ -103,10 +114,10 @@ header{
     text-decoration: none;
     background-color: #EF5411;
     border-radius: 85px;
+    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     border: 2px solid transparent;
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=0, Color=#000000)";
-    -moz-box-shadow: 0 3px 8px 3px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0 3px 8px 3px rgba(0,0,0,0.1);
     box-shadow: 0 3px 8px 3px rgba(0,0,0,0.1);
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color=#000000); 
@@ -118,7 +129,8 @@ header{
     border: 2px solid #EF5411;
 }
 .btn-orange:active{
-    transform: scale(0.94)
+    -webkit-transform: scale(0.94);
+            transform: scale(0.94)
 }
     
 /* HEADING'S */
@@ -156,8 +168,7 @@ h2::after{
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 40px;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=0, Color=#000000)";/*IE 8*/
-    -moz-box-shadow: 0 3px 8px rgba(0,0,0,0.2);/*FF 3.5+*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=0, Color=#000000)";/*IE 8*//*FF 3.5+*/
     -webkit-box-shadow: 0 3px 8px rgba(0,0,0,0.2);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=8, Direction=135, Color=#000000); /*IE 5.5-7*/
@@ -181,6 +192,8 @@ h2::after{
 .about-us{
     max-height: 90vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;        
  }
 .about-us-text{
@@ -226,17 +239,14 @@ h2::after{
     width: 100%;
     height: auto;
     -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
     transform: scale(1.15);
     -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
     transition: all 0.5s;
     opacity: 0.7;
   
   }
   .meals-show li figure img:hover{
     -webkit-transform: scale(1.03);
-    -moz-transform: scale(1.03);
     transform: scale(1.03);
     opacity: 1;
   }
@@ -279,6 +289,8 @@ h2::after{
     background-image: url(../images/where-to-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 0;
 }
@@ -287,7 +299,9 @@ h2::after{
     max-width: 608px;
 }
 .where-to--main{
-    flex: 1 0 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0px;
+            flex: 1 0 0;
     margin-top: 90px;
     margin-left: 60px;
     max-width: 615px;
@@ -317,12 +331,16 @@ h2::after{
 }
 
 .where-to--hours{
-    flex: 2 2 0;
+    -webkit-box-flex: 2;
+        -ms-flex: 2 2 0px;
+            flex: 2 2 0;
     max-width: 900px;
     text-align: center;
 }
 
 .hours-ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 230px;
     font-size: 2rem;
@@ -335,7 +353,9 @@ h2::after{
     text-align: left;
 }
 .where-to--hours--location{
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     list-style: none;
     margin-left: 270px;
 }
@@ -371,7 +391,6 @@ footer ul{
   text-decoration: none;
   color: #888;
   -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 .footer-nav a:hover{
@@ -397,7 +416,6 @@ footer li{
   vertical-align: middle;
   margin-top: -5px;
   -webkit-transition: all .2s;
-  -moz-transition: all .2s;
   transition: all .2s;
 
 }
@@ -674,67 +692,67 @@ nav{
 /* Where-To-Find-Us */
 /* ---------------------------------------------- %%%%%%%%%%%%
 
-.where-to--section{
-    height: 23em;
-    background-color: #F4F4F4;
-}
+    .where-to--section{
+        height: 23em;
+        background-color: #F4F4F4;
+    }
 
-.rows{
-    margin-left: 78px;
-    margin-top: 3em;
-}
+    .rows{
+        margin-left: 78px;
+        margin-top: 3em;
+    }
 
-.where-to--head-text h2::after{
-    margin-left: 2.3em;  
+    .where-to--head-text h2::after{
+        margin-left: 2.3em;  
 
-}
+    }
 
-.where-to--location{
-    margin-top: 2.3em;
-}
+    .where-to--location{
+        margin-top: 2.3em;
+    }
 
-.where-to--section span{
-    font-weight: 900;
-}
+    .where-to--section span{
+        font-weight: 900;
+    }
 
-.where-to--location p{
-    margin-bottom: 2em;
-}
-.where-to--hours{
-    margin-right: 10em;
-    margin-top: -10em;
-    float: right;
-    position: relative;
-}
-.where-to--hours span{
-    display: block; 
-    
-}
-.where-to--section ion-icon{
-    font-size: 120%
-}
+    .where-to--location p{
+        margin-bottom: 2em;
+    }
+    .where-to--hours{
+        margin-right: 10em;
+        margin-top: -10em;
+        float: right;
+        position: relative;
+    }
+    .where-to--hours span{
+        display: block; 
+        
+    }
+    .where-to--section ion-icon{
+        font-size: 120%
+    }
 
-.hours-ul{
-    width: 100%;
-}
-.hours-ul ul{
-    list-style: none;
-    text-transform:uppercase ;
-    margin-right: 4.3em;
-    display: inline-block;
-}
+    .hours-ul{
+        width: 100%;
+    }
+    .hours-ul ul{
+        list-style: none;
+        text-transform:uppercase ;
+        margin-right: 4.3em;
+        display: inline-block;
+    }
 
-.hours-ul li{
-    margin-top: .5em;
-}
+    .hours-ul li{
+        margin-top: .5em;
+    }
 
-.hours-ul::before{
-    content: 'Hours:';
-    display: inline-block;
-    margin-top: 15px;
-    margin-right: 10px;
-    float: left;
-    font-weight: 900;
-    
-}
-*/
+    .hours-ul::before{
+        content: 'Hours:';
+        display: inline-block;
+        margin-top: 15px;
+        margin-right: 10px;
+        float: left;
+        font-weight: 900;
+        
+    }
+    */

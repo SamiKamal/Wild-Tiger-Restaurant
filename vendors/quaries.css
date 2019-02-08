@@ -60,11 +60,18 @@
     html{font-size: 12px}
 
     .bar-section{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .text-bar{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         justify-items: center;
         margin-top: 10em;
         margin-left: auto;
@@ -92,7 +99,8 @@
     }
 
     .nav-open{
-        clip-path: circle(150% at top right) !important;
+        -webkit-clip-path: circle(150% at top right) !important;
+                clip-path: circle(150% at top right) !important;
 
     }
     .header-top nav ul{
@@ -101,7 +109,9 @@
         position: absolute;
         right: 0;
         background-color: #ffffff;
-        clip-path: circle(0px at top right);
+        -webkit-clip-path: circle(0px at top right);
+                clip-path: circle(0px at top right);
+        -webkit-transition: all ease-in-out .75s;
         transition: all ease-in-out .75s;
 
     }
@@ -144,20 +154,24 @@
         height: 3px;
         width: 2.75em;
         border-radius: 3px;
+        -webkit-transition: all ease-in-out 0.75s;
         transition: all ease-in-out 0.75s
     }
 
     .hamburgar::before{
-        transform: translateY(-8px);
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
 
     }
     .hamburgar::after{
-        transform: translateY(5px);
+        -webkit-transform: translateY(5px);
+                transform: translateY(5px);
 
     }
 
     .menu-toggle--open .hamburgar{
-        transform: rotate(45deg)
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg)
 
     }
 
@@ -167,7 +181,8 @@
     }
 
     .menu-toggle--open .hamburgar::after{
-        transform: translateY(-3px) rotate(-90deg);
+        -webkit-transform: translateY(-3px) rotate(-90deg);
+                transform: translateY(-3px) rotate(-90deg);
 
     }
 
