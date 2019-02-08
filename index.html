@@ -13,15 +13,22 @@
   <!-- HEADER --> 
   <header>
       <div class="header-top">
-        <nav>
-          <ul>
+        <nav class="nav-home">
+          <div class="logo-mobile">
+            <img src="images/WildTiger-Logo.png" alt="">
+          </div>
+          <ul class="nav-ul">
             <li><a href="">Home&ensp;&ensp;&ensp;&ensp;&ensp;</a></li>
             <li><a href="">Menu&ensp;&ensp;&ensp;&ensp;&ensp;</a></li>
-            <li><a class="wild-tiger-logo" href="index.html">Wild Tiger</a></li>
+            <li class="wild-logo-li"><a class="wild-tiger-logo" href="index.html">Wild Tiger</a></li>
             <li><a href="">Bar</a></li>
-            <li><a href="">Where To Find Us?</a></li>
+            <li><a href="">Locations</a></li>
           </ul>
         </nav>
+
+        <div class="menu-toggle">
+          <div class="hamburgar"></div>
+        </div>
       
       </div>
 
@@ -36,12 +43,14 @@
   <!-- About US -->
 
   <section class="about-us">
-    <div class="about-us-img"></div>
+    <div class="about-us-img">
+      <img src="images/About-Us-image.png" alt="">
+    </div>
 
     <div class="about-us-text">
       <h2>Our Story</h2>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam, ipsum quis pharetra suscipit, <br> <br>  elit mi accumsan nisi, quis mollis mauris nisi nec augue. Sed molestie turpis efficitur gravida iaculis. Quisque tempor, nunc et tincidunt ultricies, nunc metus semper sapien, ut aliquet lorem mi id nisi. Duis luctus dui odio, et mattis ligula porta eu.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam, ipsum quis pharetra suscipit, <br> <br>  <span class="disapper-1-mobile"> elit mi accumsan nisi, quis mollis mauris nisi nec augue. Sed molestie turpis efficitur gravida iaculis. <span class="disapper-2-mobile"> Quisque tempor, nunc et tincidunt ultricies, </span> </span></p>
 
     </div>
   </section>
@@ -105,7 +114,6 @@
   <!-- Bar -->
 
   <section class="bar-section">
-      <div class="bar-img"></div>
     <div class="text-bar">
       <h2>Amazing Bar</h2>
       <h3>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</h3>
@@ -122,14 +130,14 @@
 <section class="where-to--section clearfix">
 <div class="where-to--main">
   <div class="where-to--head-text">
-    <h2>Where To Find Us ?</h2>
+    <h2>Locations</h2>
   </div>
 
   <div class="where-to--location">
     <!-- FIXME:
     change it to div -->
     <div class="horz">
-        <span> <ion-icon name="pin"></ion-icon> Address:</span>  1825 SE 164th AVE Suite 101 <br> &emsp; &emsp;&emsp;&emsp;&ensp; &ensp; VANCOUVER, WA 98683
+        <span> <ion-icon name="pin"></ion-icon> Address:</span>  1825 SE 164th AVE Suite 101 <br>  VANCOUVER, WA 98683
 
     </div>
     <div class="horz">
@@ -198,6 +206,8 @@
       </div>
     </footer>
   
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ <script src="vendors/script.js"></script>
 </body>
 </html>

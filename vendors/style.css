@@ -16,9 +16,6 @@ html{
     text-rendering: optimizeLegibility;
 }
 
-section{
-    margin-bottom: 40px;
-}
 
 .clearfix{overflow: auto;}
 .clearfix:after{
@@ -44,8 +41,9 @@ header{
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color=#000000); /*IE 5.5-7*/
 }
 
-.box-shadows{
-
+.logo-mobile{
+    display: none;
+    
 }
 .header-top nav ul{
     display: flex;
@@ -54,24 +52,23 @@ header{
 
 }
 .wild-tiger-logo{
-    display: block;
-    /* margin-left: 150px; */
+    display: inline-block;
+    margin-right: 0;
     background-image: url(../images/WildTiger-Logo.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 461px;
     width: 461px;
-    height: 92px;
+    height: 97px;
     text-indent: -99999px;
-    flex: 1 0 0
-
+    flex: 1 0 0;
 }
+
 .header-top li{
     display: flex;
     align-items: center;    
     margin-top: 20px;
 }
 .header-top li a {
-    border-bottom: transparent;
     transition: all 0.2s;
 
 }
@@ -169,28 +166,29 @@ h2::after{
 
 /* About-Us */
 
-.about-us{
-    height: 90vh;
-
-}
 
 .about-us-img{
-    display: block;
-    max-width: 900px;;
-    background-image: url(../images/About-Us-image.png);
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size:contain;
-    background-position:left;
+    max-width: 80%;;
+    height: auto;
+    overflow: hidden;
 
 
 }
+.about-us-img img{
+    width: 100%;
+    height: auto;
+}
+.about-us{
+    max-height: 90vh;
+    width: 100%;
+    display: flex;        
+ }
 .about-us-text{
-    max-width: 760px;
+    max-width: 50%;
     text-align: center;
-    margin-top: -43em;
-    margin-right: 10em;
+    margin-top: 100px;
     float: right;
+    height: auto;
 }
 
 .about-us-text p{
@@ -202,6 +200,7 @@ h2::after{
 /* ---------------------------------------------- */
 .meals{
     padding: 0;
+    margin-top: 40px;
   
   }
   .meals-show{
@@ -247,25 +246,25 @@ h2::after{
 /* ---------------------------------------------- */
 
 .bar-section{
-    height: 85vh;
-}
-
-
-.bar-img{
-    background-image: url(../images/Bar-image.png);
+    background-image: url(../images/BAAR-FINAALDD.jpg);
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-size: 50%;
-    background-position: right;
+    background-size: cover;
+    background-position:center;  
+    height: 90vh;
+    color: #fff;
 }
+
+
 
 .text-bar{
-    margin-top: -40em;
-    text-align: center;
-    margin-right: 70em;
+    text-align: left;
+    display: inline-block;
+    margin-top: 17em;
+    margin-left: 60px;
 }
-
+.text-bar h2::after{
+    display: none;
+}
 .text-bar .btn-orange{
     margin-top: 80px;
 }
@@ -276,7 +275,7 @@ h2::after{
 
 .where-to--section{
     width: 100%;
-    height: 700px;
+    height: 750px;
     background-image: url(../images/where-to-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -285,6 +284,7 @@ h2::after{
 }
 .where-to--head-text{
     text-align: center;
+    max-width: 608px;
 }
 .where-to--main{
     flex: 1 0 0;
@@ -312,11 +312,12 @@ h2::after{
     margin-top: -10px;
 }
 .where-to--location span{
-    font-weight: 600;   
+    font-weight: 600;
+    width: 100px;
 }
 
 .where-to--hours{
-    flex: 2 0 0;
+    flex: 2 2 0;
     max-width: 900px;
     text-align: center;
 }
@@ -357,7 +358,7 @@ h2::after{
 
 footer{
   padding: 50px;
-  font-size: 80%;
+  font-size: 1rem;
   color: #888;
 }
 footer ul{
